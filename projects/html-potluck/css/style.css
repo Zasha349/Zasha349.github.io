@@ -1,12 +1,12 @@
 * {
-    box-sizing: border-box;
+box-sizing: border-box;
 }
 
 body {
-    margin: 0px;
-    font-family: sans-serif;
-    background-color: #e5f1dd
+margin: 0px;
+font-family: sans-serif;
+background-color: #e5f1dd
 }
 #card {
-    background-color:rgb(252, 252, 252)
+background-color:rgb(252, 252, 252)
 }
