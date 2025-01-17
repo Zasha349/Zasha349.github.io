@@ -14,6 +14,7 @@ body {
 .card {
     background-color: rgb(252, 250, 245);
     padding: 30px;
+    border: 5px solid rgb(208, 206, 206);
 }
 .links a {
     color: rgb(255, 255, 255);
