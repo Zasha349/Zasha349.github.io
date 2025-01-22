@@ -1,0 +1,97 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin-right: 500px;
+    margin-left: 500px;
+    font-family: sans-serif;
+}
+.card {
+    border: 3px solid grey;
+    text-align: center;
+    margin-bottom: 50px;
+}
+.pal-numb {
+    text-align: left;
+}
+
+#pal-1 {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+#pal-1-color-1 {
+    background-color: #56203d;
+    color: white;
+    padding: 24px;
+}
+#pal-1-color-2 {
+    background-color: #483A58;
+    color: white;
+    padding: 24px;
+}
+#pal-1-color-3 {
+    background-color: #56638A;
+    color: white;
+    padding: 24px;
+}
+#pal-1-color-4 {
+    background-color: #BEB2C8;
+    color: white;
+    padding: 24px;
+}
+#pal-1-color-5 {
+    background-color: #C7D9B7;
+    color: rgb(99, 99, 99);
+    padding: 24px;
+}
+
+#pal-2 {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-align: center;
+}
+#pal-2-color-1 {
+    background-color: #F75C03;
+    padding: 24px;
+    text-decoration: dotted;
+}
+#pal-2-color-2 {
+    background-color: #D90368;
+    padding: 24px;
+}
+#pal-2-color-3 {
+    background-color: #820263;
+    color: whitesmoke;
+    padding: 24px;
+}
+#pal-2-color-4 {
+    background-color: #291720;
+    color: whitesmoke;
+    padding: 24px;
+}
+#pal-2-color-5 {
+    background-color: #04A777;
+    color: white;
+    padding: 24px;
+}
+.dotted {
+    text-decoration: dotted;
+}
+
+#pal-3 {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+#pal-3-color-1 {
+    background-color: #14FFF7;
+    padding: 24px;
+}
+#pal-3-color-2 {
+    background-color: #0BC9CD;
+    padding: 24px;
+}
+#pal-3-color-3 {
+    background-color: #1D8A99;
+    padding: 24px;
+}
+.text-deco {
+    text-decoration: underline;
+}
