@@ -1,0 +1,31 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0px;
+    font-family: sans-serif;
+}
+
+div {
+    border: 10px solid purple;
+    /*Different Way to Code Boarder
+    border-width: 1px;
+    border-style: solid;
+    border-color: purple; */
+    margin: 50px;
+    /* margin: 50px 100px 50px 100px; */
+    padding: 24px 36px;
+    background-color: lavender;
+}
+p {
+    border: 5px dashed orange;
+    border-radius: 30px;
+    margin: 10px;
+    padding: 20px 35px;
+    background-color: peachpuff;
+    /* Round Button
+    border-radius: 50%
+    width: 400px;
+    height: 400px; */
+}
