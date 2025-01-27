@@ -6,3 +6,54 @@
 
     Good luck, and have fun!
 */
+
+div.frames img {
+    width: 100%;
+    border: 5px ridge whitesmoke;
+    background-color: whitesmoke;
+    padding: 5px;
+}
+
+#artist {
+    width: 100%;
+    border: 5px ridge whitesmoke;
+    background-color: whitesmoke;
+    padding: 5px;
+    margin-top: 20px;
+    font-family: "PT Sans", sans-serif;
+    font-weight: bold;
+}
+
+#frame1 {
+    width: 70px;
+    margin-top: 15px;
+}
+
+#frame2 {
+    width: 100px;
+    margin-top: 50px;
+}
+
+#middle {
+    margin-left: 10px;
+}
+#frame3 {
+    width: 70px;
+    margin-top: 20px;
+}
+
+#frame4 {
+    width: 60px;
+    margin-top: 25px;
+}
+
+#frame5 {
+    width: 85px;
+    margin-top: 30px;
+    margin-left: 30px; 
+}
+
+#frame6 {
+    width: 45px;
+    margin-top: 10px;
+}
