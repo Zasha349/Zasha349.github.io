@@ -1,0 +1,108 @@
+/*
+    NOTE TO STUDENTS: 
+
+    This is the file you should be writing your CSS in 
+    for the Generic License assignment.
+
+    Good luck, and have fun!
+*/
+
+@import url('https://fonts.googleapis.com/css2?family=Corinthia:wght@400;700&display=swap');
+
+body {
+    font-family: sans-serif;
+}
+
+#license {
+    width: 600px;
+    border: 2px solid black ;
+    border-radius: 15px;
+    padding: 24px;
+    background: linear-gradient(-200deg, #f5cc80 , #e2945d );
+}
+h1 {
+    color: darkblue;
+    font-size: 48px;
+    font-family: 'Times New Roman', Times, serif;
+    margin: 0px 0px 0px 0px;
+}
+h4 {
+    background-color: darkblue;
+    color: white;
+    text-align: center;
+    width: 350px;
+    padding: 5px;
+    margin: 5px 0px 0px 0px;
+}
+
+#left-side {
+    text-align: left;
+    display: inline-block;
+    width: 65%;
+}
+#id-and-expiration {
+    margin: 5px 0px 20px 0px;
+    font-size: 14px;
+}
+#id-and-expiration div {
+    display: inline-block;
+    color: darkblue;
+}
+#id-and-expiration span {
+    color: red;
+    font-weight: bold;
+}
+#address {
+    font-weight: bold;
+    font-size: 16px;
+    margin: 0px 0px 5px 0px;
+}
+#small-pic-container, 
+#data-fields {
+    display: inline-block;
+}
+#small-pic-container img {
+    width: 80px;
+    opacity: 50%;
+}
+#data-left, 
+#data-right {
+    display: inline-block;
+    color: darkblue;
+    margin: 0px 0px 10px 0px;
+    padding: 5px;
+    font-size: 14px;
+}
+#data-left span, 
+#data-right span {
+    color: red;
+    font-weight: bold;
+}
+#signature {
+    text-align: center;
+    font-size: 24px;
+    font-family: Corinthia, 'Times New Roman', Times, serif;
+}
+
+#right-side {
+    text-align: center;
+    display: inline-block;
+    width: 34%;
+}
+#right-side img {
+    width: 100%;
+}
+#donor, 
+#real-id {
+    display: inline-block;
+    color: red;
+    font-weight: bold;
+    font-size: 12px;
+}
+#real-id {
+    background-color: gold;
+    color: white;
+    padding: 3px;
+    border-radius: 50%;
+    margin: 0px 0px 0px 10px;
+}
