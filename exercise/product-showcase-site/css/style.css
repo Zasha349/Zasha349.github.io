@@ -1,0 +1,84 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0px;
+    font-family: sans-serif;
+    text-align: center;
+    color: midnightblue;
+}
+
+#logo {
+    display: block;
+    margin: 5px auto;
+}
+.hero {
+    background-color: peachpuff;
+    color: midnightblue;
+}
+.hero-1 {
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 100px 0px;
+}
+.hero-1 h2 {
+    background-color: rgb(255, 255, 255);
+    border: 3px solid midnightblue;
+    border-radius: 60px;
+    width: 150px;
+    margin: auto auto;
+    padding: 10px;
+}
+.hero-1 h1 {
+    font-size: 50px;
+}
+
+.section-1 {
+    background-color:rgba(209, 224, 76, 0.375);
+    padding: 60px 0px;
+}
+.section-1a h2 {
+    background-color: hotpink;
+    border: 3px solid lightpink;
+    color: whitesmoke;
+    border-radius: 60px;
+    width: 150px;
+    margin: auto auto;
+    padding: 10px;
+}
+
+.section-2 {
+    background-color: rgb(251, 213, 218);
+    padding: 60px 0px;
+}
+.section-2a {
+    display: inline-block;
+}
+.section-2a h2 {
+    background-color: rgb(250, 183, 58);
+    border: 3px solid hotpink;
+    color: whitesmoke;
+    border-radius: 60px;
+    width: 150px;
+    margin: auto auto;
+    padding: 10px;
+}
+
+.section-1a img,
+.section-2a img {
+    display: inline-block;
+    width: 300px;
+    vertical-align: middle;
+}
+.space {
+    margin: 30px 0px 0px 0px;
+    padding: 0px 0px 0px 0px;
+    display: inline-block;
+    width: 400px;
+    vertical-align: middle;
+}
+.hero-space {
+    margin: 30px 0px 0px 0px;
+}
