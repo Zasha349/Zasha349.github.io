@@ -1,0 +1,79 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#column {
+    display: flex;
+}
+
+.sections {
+    padding: 10px 0px;
+}
+
+.image-block {
+    display: flex;
+    align-items: center;
+}
+.image-block p {
+    flex: 2;
+}
+.image-block img {
+    /* flex: 1; */
+    width: 300px;
+    padding: 12px 24px 12px 24px;
+}
+
+#sidebar-content {
+    background-color: rgba(255, 0, 0, 0.525);
+    width: 200px;
+    padding: 24px;
+    border-right: 2px solid black;
+}
+#sidebar-content h3 {
+    border-bottom: 2px solid #000000;
+    padding: 8px 0px;
+}
+#sidebar-content ul {
+    padding: 0px ;
+}
+#sidebar-content ul li {
+    list-style-type: none;
+    padding: 12px 0px;
+}
+#sidebar-content ul a {
+    text-decoration: none;
+    color: #000000;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+
+#main-content {
+    flex: 1;
+    padding: 48px;
+}
+#main-content h1 {
+    border-bottom: 2px solid #000000;
+    font-family: 'Courier New', Courier, monospace;
+}
+#notice {
+    font-style: italic;
+    margin: 0px 0px 24px 48px;
+}
+
+#traits,
+#history,
+#siblings,
+#popular,
+#relationships,
+#space {
+    border-bottom: 1px solid #000000;
+    padding-bottom: 12px;
+}
