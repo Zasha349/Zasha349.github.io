@@ -1,11 +1,21 @@
+@import url('https://fonts.googleapis.com/css2?family=Geist:wght@100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DynaPuff:wght@400..700&display=swap');
+
 * {
     box-sizing: border-box;
 }
 
 body {
     margin: 0px;
-    font-family: sans-serif;
-    background-color: rgb(220, 20, 60);
+    font-family: "Geist", serif, sans-serif;
+    background-color: rgba(0, 142, 224, 0.937);
+}
+
+h1,
+h2,
+h3 {
+    font-family: "Dynapuff", serif;
+    font-weight: 500;
 }
 
 #grid-layout {
@@ -29,7 +39,7 @@ body {
 #sidebar-content ul {
     list-style-type: none;
     padding: 0px 12px;
-    background-color: crimson;
+    background-color: rgba(191, 191, 191, 0.3);
     margin: 0px 0px 36px;
     border: 1px solid whitesmoke;
     border-radius: 0px 0px 5px 5px;
@@ -63,8 +73,17 @@ body {
     border-radius: 30px;
     /* border: 5px solid skyblue; */
 }
-#main-content h6 {
+#top {
+    display: flex;
+}
+#right-top {
+    flex: 1;
     text-align: right;
+    margin: 5px 0px;
+}
+#left-top {
+    flex: 1;
+    text-align: left;
     margin: 5px 0px;
 }
 #main-content div {
@@ -84,4 +103,8 @@ body {
     display: inline-block;
     text-decoration: none;
     color: whitesmoke;
+}
+#main-content h3 {
+    text-align: center;
+    margin: 36px 0px 0px 0px;
 }
