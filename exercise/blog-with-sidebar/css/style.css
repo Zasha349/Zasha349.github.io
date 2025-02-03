@@ -16,6 +16,7 @@ h2,
 h3 {
     font-family: "Dynapuff", serif;
     font-weight: 500;
+    color: #111111;
 }
 
 #grid-layout {
@@ -35,6 +36,7 @@ h3 {
     padding: 12px;
     font-size: 18px;
     margin: 0px;
+    color: #111111;
 }
 #sidebar-content ul {
     list-style-type: none;
@@ -97,7 +99,7 @@ h3 {
     text-align: center;
 }
 #main-content h2 a {
-    background-color: black;
+    background-color: #111111;
     border-radius: 16px;
     padding: 20px;
     display: inline-block;
