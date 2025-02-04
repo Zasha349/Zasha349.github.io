@@ -1,0 +1,127 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0px;
+    font-family: sans-serif;
+}
+
+#single-column {
+    width: 80%;
+    min-width: 500px;
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+}
+#grid-columns {
+    display: grid;
+    grid-template-columns: 150px 500px 1fr;
+    grid-template-areas:
+        "header header header"
+        "images product info";
+}
+
+#header {
+    grid-area: header;
+    text-align: center;
+    padding: 12px 0px;
+    margin-bottom: 64px;
+    background-color: rgb(247, 245, 245);
+    border-bottom: 4px solid rgb(75, 114, 187);
+}
+#m {
+    color: red;
+}
+#e {
+    color: rgb(255, 145, 0);
+}
+#b {
+    color: blue;
+}
+#a {
+    color: rgb(255, 196, 2);
+}
+#y {
+    color: green;
+}
+
+#header h1 {
+    font-size: 48px;
+}
+#header a {
+    color: black;
+    text-decoration: none;
+}
+
+#images {
+    grid-area: images;
+    text-align: right;
+    background-color: rgb(247, 245, 245);
+    border-radius: 24px 0px 0px 24px;
+}
+#images img {
+    width: 100px;
+    margin: 24px 24px 24px 12px;
+    border-radius: 12px;
+}
+
+#product {
+    grid-area: product;
+    /* text-align: center; */
+    padding: 0px;
+    margin: 0px;
+}
+#product img {
+    width: 100%;
+    /* min-width: 500px; */
+    max-width: 500px;
+    border-radius: 0px 24px 24px 0px;
+    display: block;
+}
+
+#product-info {
+    grid-area: info;
+    width: 80%;
+    min-width: 300px;
+    padding-left: 36px;
+}
+#product-info h2 {
+    font-size: 28px;
+    margin: 0px 0px;
+}
+#product-info #seller-profile {
+    margin: 36px 0px;
+}
+#product-info #seller-info a {
+    color: black;
+}
+#product-info #price {
+    font-size: 24px;
+    font-weight: bold;
+}
+#product-info #seller {
+    font-weight: bold;
+    padding: 0px;
+}
+#product-info a h5 {
+    border: 4px solid rgb(75, 114, 187);
+    color: rgb(75, 114, 187);
+    text-align: center;
+    padding: 12px 0px;
+    border-radius: 24px;
+}
+#product-info a {
+    text-decoration: none;
+    color: rgb(75, 114, 187);
+}
+
+#product-info #buy {
+    background-color: rgb(75, 114, 187);
+}
+#product-info a #buy {
+    color: white;
+}
+#product-info span {
+    font-weight: bold;
+}
