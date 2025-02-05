@@ -14,14 +14,17 @@ body {
     margin-left: auto;
     margin-right: auto;
 }
+
 #grid-columns {
     display: grid;
     grid-template-columns: 150px 500px 1fr;
     grid-template-areas:
         "header header header"
-        "images product info";
+        "images product info"
+        "shipping shipping info";
 }
 
+/* Header */
 #header {
     grid-area: header;
     text-align: center;
@@ -30,35 +33,35 @@ body {
     background-color: rgb(247, 245, 245);
     border-bottom: 4px solid rgb(75, 114, 187);
 }
+#header h1 {
+    font-size: 48px;
+}
+#header h1 a {
+    text-decoration: none;
+}
 #m {
-    color: red;
+    color: rgb(230, 0, 0);
 }
 #e {
     color: rgb(255, 145, 0);
 }
 #b {
-    color: blue;
+    color: rgb(1, 1, 222);
 }
 #a {
-    color: rgb(255, 196, 2);
+    color: rgb(243, 188, 8);
 }
 #y {
-    color: green;
+    color: rgb(0, 144, 0);
 }
 
-#header h1 {
-    font-size: 48px;
-}
-#header a {
-    color: black;
-    text-decoration: none;
-}
-
+/* Side Images */
 #images {
     grid-area: images;
     text-align: right;
     background-color: rgb(247, 245, 245);
     border-radius: 24px 0px 0px 24px;
+    height: 664px;
 }
 #images img {
     width: 100px;
@@ -66,15 +69,14 @@ body {
     border-radius: 12px;
 }
 
+/* Product Main Image */
 #product {
     grid-area: product;
-    /* text-align: center; */
     padding: 0px;
     margin: 0px;
 }
 #product img {
     width: 100%;
-    /* min-width: 500px; */
     max-width: 500px;
     border-radius: 0px 24px 24px 0px;
     display: block;
@@ -88,17 +90,10 @@ body {
 }
 #product-info h2 {
     font-size: 28px;
-    margin: 0px 0px;
-}
-#product-info #seller-profile {
-    margin: 36px 0px;
+    margin: 0px 0px 24px 0px;
 }
 #product-info #seller-info a {
     color: black;
-}
-#product-info #price {
-    font-size: 24px;
-    font-weight: bold;
 }
 #product-info #seller {
     font-weight: bold;
@@ -115,13 +110,135 @@ body {
     text-decoration: none;
     color: rgb(75, 114, 187);
 }
+#product-info #seller-info {
+    background-color: rgb(247, 245, 245);
+    padding: 8px 12px;
+    border-radius: 24px;
+}
+#product-info #seller-info #seller-profile {
+    display: flex;
+    border-bottom: 2px solid rgb(75, 114, 187);
+}
+#product-info #seller-profile img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin: 0px 12px 8px 0px;
+}
+#product-info #seller-info #seller-data {
+    padding-left: 12px;
+}
 
+/* Product Info Bottom */
+#product-info #price {
+    font-size: 24px;
+    font-weight: bold;
+    margin-top: 52px;
+}
+#product-info #condition {
+    margin-top: 8px;
+    margin-bottom: 56px;
+}
 #product-info #buy {
     background-color: rgb(75, 114, 187);
 }
 #product-info a #buy {
     color: white;
 }
-#product-info span {
+#product span {
     font-weight: bold;
+}
+#product-info #condition i {
+    padding: 0px 4px;
+    color: rgb(75, 114, 187);
+}
+
+/* psuedos */
+#product-info #cart:hover {
+    background-color: rgb(0, 144, 0);
+    border-color: white;
+    color: white;
+}
+#product-info a #wish:hover {
+    background-color: rgb(230, 0, 0);
+    border-color: white;
+    color: white;
+}
+
+#description {
+    grid-area: shipping;
+}
+#description #shipping {
+    display: flex;
+    padding: 20px;
+    align-items: flex-start;
+}
+#description #stack-info {
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+}
+#description p {
+    margin: 4px 20px;
+}
+.title {
+    margin: 0px 36px;
+    /* text-align: right; */
+}
+#description #line-1 {
+    color: rgb(0, 144, 0);
+}
+#description #line-3 {
+    opacity: 35%;
+}
+#description #returns {
+    display: flex;
+    padding: 20px;
+}
+#description #payment {
+    padding: 20px;
+}
+#description a {
+    color: rgb(75, 114, 187);
+}
+#description #payment {
+    display: flex;
+    align-items: flex-start;
+}
+#description #payment img {
+    width: 50px;
+    border: 2px solid black;
+    padding: 8px 8px;
+    border-radius: 12px;
+    display: inline-block;
+    margin: 0px 8px;
+}
+#description #payment #google {
+    width: 85px;
+}
+#description #payment #apple {
+    width: 75px;
+    padding: 0px;
+}
+
+/* Extra Info */
+#data-block {
+    background-color: rgb(247, 245, 245);
+    border-radius: 24px;
+    padding: 8px;
+    width: 400px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 56px;
+}
+.side-by-side {
+    display: flex;
+    align-items: center;
+}
+.side-by-side i {
+    flex: 1;
+    padding: 8px;
+}
+.side-by-side p {
+    width: 400px;
 }

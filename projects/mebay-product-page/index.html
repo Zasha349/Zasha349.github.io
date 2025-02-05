@@ -4,13 +4,14 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>MeBay</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
         <link href="css/style.css" rel="stylesheet">
     </head>
     <body>
         <div id="header">
             <h1>
                 <a href="#">
-                    <span id="m">m</span><span id="e">e</span><span id="b">b</span><span id="a">a</span><span id="y">y</span>
+                    <span id="m">z</span><span id="b">b</span><span id="a">a</span><span id="y">y</span>
                 </a>
             </h1>
         </div>
@@ -37,10 +38,16 @@
                         FUNKO POP! Television Snoopy BoxLunch Exclusive 
                         Snoopy Chef #1438
                     </h2>
-                    <div id="seller-profile">
-                        <p id="seller">Bl Designer Boutique (17958)</p>
-                        <p id="seller-info">
-                            <a href="#">99.9%</a>
+                    <div id="seller-info">
+                        <div id="seller-profile">
+                            <img
+                                src="images/seller.png"
+                                alt="Seller Profile Picture"
+                            >
+                            <p id="seller">Bl Designer Boutique (17958)</p>
+                        </div>
+                        <p id="seller-data">
+                            <a href="#">99.9% positive</a>
                             &bull;
                             <a href="#">Seller's other items</a>
                             &bull;
@@ -48,10 +55,86 @@
                         </p>
                     </div>
                     <p id="price">US $28.00</p>
-                    <p>Condition: <span>New</span></p>
+                    <p id="condition">
+                        Condition: 
+                        <span>New</span>
+                        <i class="fa-solid fa-circle-question"></i>
+                    </p>
                     <a href="#"><h5 id="buy">Buy</h5></a>
-                    <a href="#"><h5>Add to cart</h5></a>
-                    <a href="#"><h5>Add to wishlist</h5></a>
+                    <a href="#">
+                        <h5 id="cart">
+                            <i class="fa-solid fa-cart-shopping"></i>
+                            Add to cart
+                        </h5>
+                    </a>
+                    <a href="#">
+                        <h5 id="wish">
+                            <i class="fa-solid fa-heart"></i>
+                            Add to wishlist
+                        </h5>
+                    </a>
+                    <div class="product-text">
+                        <div id="data-block">
+                            <div class="side-by-side">
+                                <i class="fa-solid fa-bolt"></i>
+                                <p>
+                                    <span>People are checking this out.</span>
+                                    6 have added this to their watchlist.
+                                </p>
+                            </div>
+                            <div class="side-by-side">
+                                <i class="fa-solid fa-bolt"></i>
+                                <p>
+                                    <span>Other people bought this.</span>
+                                    1 has already sold.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="description">
+                    <div id="shipping">
+                        <p class="title">Shipping:</p>
+                        <div id="stack-info">
+                            <p id="line-1">
+                                Free delivery- Arrives by 
+                                Valentine's Day
+                            </p>
+                            <p id="line-2">
+                                Get it between Fri, Fed 7 and Tue, 
+                                Fed 11 to 32817.
+                                <a href="#">See details</a>
+                            </p>
+                            <p id="line-3">
+                                Located in: Northridge, California, 
+                                United States
+                            </p>
+                        </div>
+                    </div>
+                    <div id="returns">
+                        <p class="title">Returns:</p>
+                        <p>
+                            Seller does not accept returns.
+                            <a href="#">See details</a>
+                        </p>
+                    </div>
+                    <div id="payment">
+                        <p class="title">Payments:</p>
+                        <img
+                            src="images/paypal.png"
+                            alt="Paypal Logo"
+                        >
+                        <img
+                            src="images/gpay.png"
+                            alt="Google Pay Logo"
+                            id="google"
+                        >
+                        <img
+                            src="images/applepay.png"
+                            alt="Apple Pay Logo"
+                            id="apple"
+                        >
+                    </div>
                 </div>
             </div>
         </div>
