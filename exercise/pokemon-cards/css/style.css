@@ -1,0 +1,101 @@
+/*
+    Write your CSS for the assignment here.
+
+    You shouldn't need to modify the HTML;
+    however, you are allowed to. 
+    
+    Just be aware that you may break some
+    of the setup.css styling if you do so.
+*/
+
+.card-container {
+    display: flex;
+    gap: 36px;
+    align-items: flex-start;    
+}
+
+.card-style-3 {
+    width: 350px;
+    border: 16px solid gold;
+    border-radius: 12px;
+    padding: 18px;
+    display: flex;
+    flex-direction: column;
+}
+
+.card-style-3 img {
+    width: 100%;
+    border: 3px solid gold;
+}
+
+#pokemon-card-1 {
+    background-color: green;
+    border-radius: 12px;
+}
+
+.pokemon-header {
+    display: flex;
+    align-items: center;
+}
+
+.pokemon-header .name {
+    flex: 1;
+    margin: 4px 0px;
+}
+
+.pokemon .health {
+    flex: 1;
+}
+
+.details {
+    background-color: gold;
+    font-size: 12px;
+    font-weight: bold;
+    font-style: italic;
+    text-align: center;
+    margin-top: 4px;
+}
+
+.attack {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 2px solid black;
+    flex: 1;
+    padding: 10px 0px;
+}
+
+.attack .description .bold,
+.power {
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.attack .description {
+    font-size: 14px;
+}
+
+.data {
+    border: 2px solid gold;
+    font-size: 12px;
+    padding: 4px;
+    margin: 8px 0px 4px 0px;
+    font-weight: bold;
+}
+
+/* Card 2 */
+
+#pokemon-card-2 {
+    background-color: green;
+}
+
+/* Card 3 */
+
+#pokemon-card-3 {
+    background-color: orangered;
+}
+
+/* Card 4 */
+#pokemon-card-4 {
+    background-color: aqua;
+}
