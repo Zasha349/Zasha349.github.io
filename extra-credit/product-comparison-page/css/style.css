@@ -1,0 +1,218 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0px;
+    font-family: sans-serif;
+    color: midnightblue;
+}
+
+#top-hero {
+    background-image: url("../images/cover-image-owala.jpeg");
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    margin: 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#top-hero #banner {
+    flex: 1;
+    background-color: rgba(245, 245, 245, 0.462);
+    text-align: center;
+}
+
+#top-hero img {
+    position: relative;
+    top: 40%;
+    width: 500px;
+    display: inline-block;
+}
+
+#logo {
+    display: block;
+    margin: 5px auto;
+}
+.hero {
+    background-color: peachpuff;
+    color: midnightblue;
+    display: flex;
+    justify-content: center;
+}
+
+.hero-1 {
+    width: 50%;
+    padding: 70px 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.hero-1 img {
+    flex: 1;
+    width: 100px;
+    margin-right: 62px;
+}
+
+.hero-1 h2 {
+    background-color: rgb(255, 255, 255);
+    border: 3px solid midnightblue;
+    border-radius: 60px;
+    width: 150px;
+    padding: 10px;
+}
+
+.hero-1 .hero-space a {
+    text-decoration: none;
+    color: midnightblue;
+    background-color: whitesmoke;
+    border-radius: 60px;
+    padding: 12px 24px;
+    display: inline-block;
+    text-decoration: none;
+    font-weight: bold;
+    border: 3px solid midnightblue;
+    margin-top: 24px;
+}
+
+.hero-1 h1 {
+    font-size: 50px;
+}
+
+.cards {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.cards img {
+    width: 300px;
+}
+
+.section-1a {
+    background-color: rgba(209, 224, 76, 0.375);
+    padding: 60px 72px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    order: 2;
+}
+
+.section-1a a {
+    background-color: hotpink;
+    border: 3px solid lightpink;
+    color: whitesmoke;
+    border-radius: 60px;
+    padding: 12px 24px;
+    display: inline-block;
+    text-decoration: none;
+    font-weight: bold;
+    text-shadow: 1px 1px 5px rgb(149, 149, 149);
+}
+
+.section-2a {
+    background-color: rgb(251, 213, 218);
+    padding: 60px 72px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    order: 1;
+}
+
+.section-2a a {
+    background-color: rgb(250, 183, 58);
+    border: 3px solid hotpink;
+    color: whitesmoke;
+    border-radius: 60px;
+    padding: 12px 24px;
+    display: inline-block;
+    text-decoration: none;
+    font-weight: bold;
+    text-shadow: 1px 1px 5px rgb(149, 149, 149);
+}
+
+.section-3a {
+    background-color: rgb(169, 223, 234);
+    padding: 60px 72px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    order: 3;
+}
+
+.section-3a a {
+    background-color: rgb(163, 200, 122);
+    border: 3px solid rgb(77, 0, 185);
+    color: whitesmoke;
+    border-radius: 60px;
+    padding: 12px 24px;
+    display: inline-block;
+    text-decoration: none;
+    font-weight: bold;
+    text-shadow: 1px 1px 5px rgb(149, 149, 149);
+}
+
+.section-1a img,
+.section-2a img {
+    display: inline-block;
+    width: 300px;
+}
+.space {
+    margin: 30px 0px 0px 0px;
+    padding: 0px 0px 0px 0px;
+    width: 400px;
+    flex: 1;
+}
+
+h2 {
+    font-size: 20px;
+}
+
+#chart {
+    background-color: rgba(144, 224, 224, 0.622);
+    text-align: center;
+    padding: 72px 0px;
+}
+
+#chart h1 {
+    margin: 0px;
+    padding-top: 36px;
+    font-size: 36px;
+}
+
+#chart-content {
+    padding: 40px 0px;
+    width: 900px;
+    margin: auto auto;
+}
+
+.chart-header, 
+.rows {
+    display: flex;
+    justify-content: center;
+}
+
+.chart-header,
+.chart-header div {
+    font-weight: bold;
+    flex: 1;
+    font-size: 20px;
+}
+
+.rows {
+    padding: 24px;
+    border-bottom: 3px solid rgb(226, 147, 0);
+}
+
+.rows div {
+    flex: 1;
+}

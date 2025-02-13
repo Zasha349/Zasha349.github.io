@@ -24,6 +24,9 @@ body {
     transition: text-decoration .4s;
     padding: 8px 10px;
     margin: 0px 20px;
+    transition:
+        background-color .4s,
+        color .4s;
 }
 
 .navbar a:hover {
@@ -52,7 +55,7 @@ body {
 
 #hero-content h1 {
     color: whitesmoke;
-    font-size: 140px;
+    font-size: 130px;
 }
 
 #hero-content a {
@@ -89,10 +92,10 @@ body {
     margin: 30px auto;
 }
 
-#layout h1 {
+/* #layout h1 {
     font-size: 48px;
     margin: 20px 0px;
-}
+} */
 
 .grid {
     columns: 3 auto;
@@ -150,4 +153,17 @@ body {
     background-color: lightgrey;
     padding-bottom: 200px;
     padding-top: 50px;
+}
+
+.grid-gallery {
+    columns: 3 auto;
+    column-gap: 24px;
+    padding-top: 36px;
+    border-top: 4px solid rgba(143, 16, 16);
+}
+
+.grid-gallery img {
+    width: 100%;
+    margin-bottom: 32px;
+    border-radius: 2px;
 }
