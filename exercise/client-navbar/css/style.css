@@ -1,0 +1,53 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0px;
+    font-family: sans-serif;
+}
+
+/* Client 1 */
+
+#navbar-1 {
+    display: flex;
+    align-items: center;
+    background-color: #e9d7c0;
+    padding: 0px 100px;
+    position: sticky;
+    top: 0px;
+}
+
+#navbar-1 #logo {
+    margin-right: auto;
+}
+
+#navbar-1 a{
+    text-decoration: none;
+    color: #9b7d61;
+    padding: 24px;
+    font-size: 20px;
+}
+
+/* Client 2 */
+
+#navbar-2 {
+    display: flex;
+    align-items: center;
+    position-sticky;
+    top: 0px;
+    justify-content: space-around;
+    background-color: rgb(235, 244, 255)
+}
+
+#navbar-2 a {
+    text-decoration: none;
+    color: rgb(0, 39, 84);
+}
+
+#navbar-2 .cta-button {
+    background-color: #ea7468;
+    padding: 16px 24px;
+    border-radius: 20px;
+    font-weight: bold;
+}
