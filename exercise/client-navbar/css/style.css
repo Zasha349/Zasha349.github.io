@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Knewave&family=Sour+Gummy:ital,wght@0,100..900;1,100..900&family=Yesteryear&family=Zain:ital,wght@0,200;0,300;0,400;0,700;0,800;0,900;1,300;1,400&display=swap');
+
 * {
     box-sizing: border-box;
 }
@@ -13,20 +15,24 @@ body {
     display: flex;
     align-items: center;
     background-color: #e9d7c0;
-    padding: 0px 100px;
+    padding: 0px 150px;
     position: sticky;
     top: 0px;
+    font-family: "Zain", serif;
 }
 
 #navbar-1 #logo {
     margin-right: auto;
+    font-family: "Yesteryear", serif;
+    font-size: 20px;
+    padding: 0px;
 }
 
 #navbar-1 a{
     text-decoration: none;
     color: #9b7d61;
     padding: 24px;
-    font-size: 20px;
+    font-size: 24px;
 }
 
 /* Client 2 */
@@ -34,20 +40,93 @@ body {
 #navbar-2 {
     display: flex;
     align-items: center;
-    position-sticky;
+    position: sticky;
     top: 0px;
-    justify-content: space-around;
-    background-color: rgb(235, 244, 255)
+    justify-content: space-evenly;
+    background-color: #f7f5ec;
+    font-family: "Zain", serif;
+    font-size: 24px;
+}
+
+#navbar-2 #logo-2 {
+    font-family: "Sour Gummy", serif;
+    font-size: 20px
 }
 
 #navbar-2 a {
     text-decoration: none;
-    color: rgb(0, 39, 84);
+    color: #293454;
+    padding: 0px 36px;
 }
 
 #navbar-2 .cta-button {
-    background-color: #ea7468;
+    background-color: #eecb8e;
     padding: 16px 24px;
     border-radius: 20px;
     font-weight: bold;
+}
+
+/* Client 3 */
+
+#navbar-3 {
+    position: sticky;
+    top: 0px;
+    font-family: "Zain", serif;
+}
+
+#navbar-3 #top-nav {
+    background-color: rgb(67, 20, 67);
+    color: white;
+    text-align: center;
+    padding: 10px;
+    font-size: 18px;
+}
+
+#top-nav span {
+    font-weight: bold;
+}
+
+#middle-nav {
+    display: flex;
+    align-items: center;
+    padding: 0px 90px;
+}
+
+#middle-nav #logo-3 h1 {
+    margin-right: auto;
+    font-family: "Knewave", serif;
+    font-size: 36px;
+}
+
+#middle-nav div {
+    margin-left: auto;
+}
+
+#navbar-3 #middle-nav a {
+    text-decoration: none;
+    color: rgb(32, 6, 45);
+    padding: 10px 20px;
+    font-size: 24px;
+}
+
+#navbar-3 #middle-nav .cta-button {
+    background-color: rgb(255, 132, 0);
+    border-radius: 24px;
+    padding: 14px 28px;
+    font-weight: bold;
+    font-size: 28px;
+    margin: 0px 12px;
+}
+
+#navbar-3 #bottom-nav {
+    background-color: rgb(255, 132, 0);
+    display: flex;
+    justify-content: space-evenly;
+}
+
+#navbar-3 #bottom-nav a {
+    text-decoration: none;
+    padding: 10px 12px;
+    color: rgb(32, 6, 45);
+    font-size: 20px;
 }
