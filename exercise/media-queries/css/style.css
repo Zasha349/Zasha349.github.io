@@ -212,6 +212,23 @@ a {
 
 /* TODO: Add your media query code here */
 
+@media screen and (max-width: 1050px) and (min-width: 768px) {
+    #hero h1 {
+        font-size: 80px;
+    }
+    #hero h3 {
+        font-size: 50px;
+    }
+
+    .three-cards {
+        margin: 18px;
+    }
+
+    .two-cards {
+        margin: 14px;
+    }
+}
+
 @media screen and (max-width: 768px) {
     #nav {
         flex-direction: column;
@@ -226,12 +243,12 @@ a {
         padding: 8px;
     }
 
-    #nav #nav-links li{
+    #nav #nav-links li {
         padding: 8px 20px;
     }
 
     #hero h1 {
-        font-size: 100px;
+        font-size: 70px;
     }
     
     #hero h3 {
@@ -241,6 +258,10 @@ a {
     .three-cards,
     .two-cards {
         flex-direction: column;
+    }
+
+    .three-cards .card {
+        margin: 28px 20px;
     }
 
     .two-cards .card a {
