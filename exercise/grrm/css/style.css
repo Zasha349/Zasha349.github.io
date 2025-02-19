@@ -114,7 +114,6 @@ body {
     border-image: linear-gradient(to bottom, #666666EE, #66666600 50%) 1;
 }
 
-
 /**************************************************************
     Header Styling
 **************************************************************/
@@ -236,7 +235,7 @@ body {
 /**************************************************************
     Banner and Cards Styling
 **************************************************************/
-#banner-container{
+#banner-container {
     margin: 0px 12px;
     padding: 8px;
 
@@ -442,9 +441,6 @@ body {
 
 /* Tablet Breakpoint */
 @media screen and (max-width: 1000px) and (min-width: 800px) {
-    /* body {
-        background: green;
-    } */
 
     #grid-layout {
         grid-template-columns: 1fr 1fr 1fr;
@@ -459,7 +455,7 @@ body {
     }
 
     #header h1 {
-        font-size: 60px;
+        font-size: 52px;
     }
 
     #nav {
@@ -473,9 +469,6 @@ body {
 
 /* Mobile Breakpoint */
 @media screen and (max-width: 800px) {
-    /* body {
-        background: red;
-    } */
 
     #grid-layout {
         grid-template-columns: 1fr;
@@ -514,7 +507,7 @@ body {
     }
 
     #header h1 {
-        font-size: 52px;
+        font-size: 40px;
     }
 
     #banner-container,
