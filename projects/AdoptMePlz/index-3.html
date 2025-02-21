@@ -7,12 +7,19 @@
         <link href="css/style.css" rel="stylesheet">
     </head>
     <body>
-        <div id="header">
+        <div class="header">
             <a href="index.html" id="logo"><h2>AdoptMePlz</h2></a>
-            <div id="hyperlinks">
-                <a href="#">Adopt</a>
-                <a href="#">Volunteer</a>
-                <a href="#">Donate</a>
+            <div class="hyperlinks">
+                <div class="dropdown-container">
+                    <a href="#" class="main-link">Adopt</a>
+                    <div class="dropdown-menu">
+                        <a href="index-2.html">Maria</a>
+                        <a href="index-3.html">Blueberry</a>
+                        <a href="index-4.html">Jacky & Jill</a>
+                    </div>
+                </div>
+                <a href="#" class="main-link">Volunteer</a>
+                <a href="#" class="main-link">Donate</a>
             </div>
         </div>
         <!-- <div id="hero-1">
@@ -21,19 +28,21 @@
                 <a href="#">Apply Now</a>
             </div>
         </div> -->
-        <div id="pet-1" class="pet-page">
+        <div id="pet-2" class="pet-page">
             <div class="pet-img">
-                <img src="images/blueberry.jpg" alt="White Cat">
+                <img src="images/blueberry.jpg" alt="Blue Bird">
             </div>
             <div class="pet-info">
-                <h2>Maria</h2>
-                <p class="age">2 years old</p>
-                <p>
-                    Maria is a sweet sassy cat who loves to get her 
-                    beauty sleep.
+                <div class="pet-title">
+                    <h2>Blueberry</h2>
+                    <p class="age">5 years old / Male</p>
+                </div>
+                <p class="details">
+                    Blueberry is a cherpy cute bird that loves to sing 
+                    and fly, and his favorite food is of course blueberries.
                 </p>
-                <a href="#">Adopt Now!</a>
-                <a href="#"> Scheduale a Play Date</a>
+                <a href="#" class="adopt-button">Adopt Now!</a>
+                <a href="#" class="scheduale-button"> Scheduale a Play Date</a>
             </div>
         </div>
     </body>

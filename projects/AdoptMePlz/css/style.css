@@ -9,41 +9,83 @@ body {
     font-family: "Zain", sans-serif;
 }
 
-#header {
+.header {
     display: flex;
     align-items: center;
-    background-color: rgb(253, 242, 124);
-    padding: 10px 48px;
+    /* background-color: rgb(253, 242, 124); */
+    background: linear-gradient(to bottom, rgb(253, 242, 124), rgb(250, 239, 122));
+    padding: 0px 48px;
 }
 
-#header #logo {
-    flex: 1;
-    padding: 0px 24px;
-    margin: 0px;
-    font-size: 20px;
+.header #logo {
+    margin-right: auto;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    font-size: 24px;
     text-decoration: none;
-    color: rgb(0, 110, 255);
+    color: rgb(64, 147, 255);
     font-family: "Sour Gummy", serif;
 }
 
-#header #hyperlinks {
+.header #hyperlinks {
     display: flex;
 }
 
-#hyperlinks a {
-    padding: 16px 28px;
-    margin: 12px;
-    text-decoration: none;
-    font-size: 24px;
-    color: rgb(0, 110, 255);
-    display: inline-block;
-    font-weight: bold;
-    /* color: #222222; */
+.dropdown-container {
+    position: relative;
+    z-index: 10;
 }
 
-#hyperlinks a:hover {
-    background-color: rgba(255, 255, 255, 0.486);
-    border-radius: 60px;
+.dropdown-menu {
+    position: absolute;
+    opacity: 0;
+    visibility: hidden;
+    background: rgb(253, 242, 124);
+    border-radius: 0px 0px 50px 50px;
+    padding-bottom: 16px;
+    transition: 
+        opacity 0.3s,
+        visibility 0.3s;
+}
+
+.dropdown-menu a {
+    color: #5BC260;
+}
+
+.dropdown-container:hover .dropdown-menu {
+    opacity: 1;
+    visibility: visible;
+}
+
+.hyperlinks {
+    display: flex;
+}
+
+.hyperlinks a {
+    padding: 18px 32px;
+    margin: 5px 16px;
+    text-decoration: none;
+    font-size: 24px;
+    display: inline-block;
+    font-weight: bold;
+    transition:
+        background-color 0.3s,
+        border-radius 0.3s;
+}
+
+.hyperlinks .main-link {
+    font-size: 28px;
+    color: #ef8354;
+}
+
+.hyperlinks a:hover {
+    background-color: rgba(240, 249, 255, 0.5);
+    border-radius: 50px;
+}
+
+#hero-1 img {
+    opacity: 0;
+    visibility: hidden;
 }
 
 #hero-1 {
@@ -71,16 +113,25 @@ body {
     color: white;
     font-size: 28px;
     /* background-color:rgb(0, 110, 255); */
-    border: 4px solid rgb(253, 242, 124);
+    border: 4px solid rgb(64, 147, 255);
     padding: 14px 32px;
-    border-radius: 60px;
+    border-radius: 50px;
     font-family: "Sour Gummy", serif;
+    transition:
+        background-color 0.3s,
+        box-shadow 0.3s;
+}
+
+#hero-content-1 a:hover {
+    background-color: rgb(64, 147, 255);
+    box-shadow: 4px 2px 5px #ef82544f;
 }
 
 .pet-page .pet-img img {
     width: 100%;
     height: 100%;
     object-fit: cover;
+    border-radius: 60px;
 }
 
 .pet-page {
@@ -92,11 +143,17 @@ body {
     margin-top: 68px;
 }
 
+.pet-img {
+    flex: 1;
+}
+
 .pet-info {
     margin-left: 36px;
-    width: 250vh;
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    flex: 1;
+    margin-bottom: 72px;
 }
 
 .pet-info h2 {
@@ -106,19 +163,23 @@ body {
 }
 
 .pet-info p {
-    font-size: 24px;
-    /* flex: 1; */
+    font-size: 22px;
 }
 
 .pet-info .age {
     font-weight: bold;
+    font-size: 24px;
 }
 
-.pet-info a {
+.pet-info .details {
+    margin-bottom: 72px;
+}
+
+.pet-info .adopt-button {
     text-decoration: none;
-    color: rgb(0, 110, 255);
-    border: 3px solid rgb(0, 110, 255);
-    border-radius: 60px;
+    color: rgb(64, 147, 255);
+    border: 3px solid rgb(46, 147, 255);
+    border-radius: 50px;
     display: block;
     padding: 14px 24px;
     margin-bottom: 24px;
@@ -126,4 +187,133 @@ body {
     font-family: "Sour Gummy", serif;
     font-size: 20px;
     font-weight: bold;
+    transition:
+        background-color 0.3s,
+        box-shadow 0.3s,
+        color 0.3s,
+        transform 0.3s;
+}
+
+.pet-info .scheduale-button {
+    text-decoration: none;
+    color: #ef8354;
+    border: 3px solid #ef8354;
+    border-radius: 50px;
+    display: block;
+    padding: 14px 24px;
+    margin-bottom: 24px;
+    text-align: center;
+    font-family: "Sour Gummy", serif;
+    font-size: 20px;
+    font-weight: bold;
+    transition:
+        background-color 0.3s,
+        box-shadow 0.3s,
+        color 0.3s,
+        transform 0.3s;
+}
+
+.pet-info .adopt-button:hover {
+    background-color: rgb(64, 147, 255);
+    box-shadow: 4px 2px 5px #ef82544f;
+    color: white;
+    transform: translateY(-2px);
+}
+
+.pet-info .scheduale-button:hover {
+    background-color: #ef8354;
+    box-shadow: 4px 2px 5px rgba(64, 147, 255, 0.255);
+    color: white;
+    transform: translateY(-2px);
+}
+
+/* Media Quieres */
+
+@media screen and (max-width: 1000px) {
+    .header {
+        flex-direction: column;
+    }
+
+    .header #logo {
+        margin-right: 0px;
+    }
+
+    #hero-1 img {
+        opacity: 1;
+        visibility: visible;
+        width: 100%;
+        padding: 10px 20px;
+        border-radius: 50px;
+    }
+
+    #hero-1 {
+        background-image: none;
+        background-size: 
+    }
+
+    #hero-1 #hero-content-1 {
+        position: static;
+        margin-left: 30px;
+    }
+
+    #hero-1 #hero-content-1 a {
+        color: rgb(64, 147, 255);
+        font-size: 20px;
+    }
+
+    #hero-content-1 h2 {
+        color: #5BC260;
+        font-size: 44px;
+        margin-top: 0px;
+    }
+
+    #hero-1 #hero-content-1 a:hover {
+        color: white;
+    }
+}
+
+@media screen and (max-width: 660px) {
+    .hyperlinks .main-link {
+        font-size: 24px;
+    }
+
+    .hyperlinks a {
+        font-size: 20px;
+    }
+
+    #logo h2 {
+        margin-bottom: 10px;
+        padding: 0px;
+    }
+    
+    .pet-page {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .pet-page a {
+        width: 450px;
+    }
+
+    .pet-info {
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+        margin-left: 0px;
+    }
+
+    #hero-1 #hero-content-1 {
+        text-align: center;
+        margin-left: 0px;
+        margin: 0px 20px;
+    }
+
+    #hero-content-1 h2{
+        font-size: 40px;
+    }
+
+    #hero-content-1 a {
+        text-align: center;
+    }
 }

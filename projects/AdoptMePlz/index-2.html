@@ -7,12 +7,19 @@
         <link href="css/style.css" rel="stylesheet">
     </head>
     <body>
-        <div id="header">
+        <div class="header">
             <a href="index.html" id="logo"><h2>AdoptMePlz</h2></a>
-            <div id="hyperlinks">
-                <a href="#">Adopt</a>
-                <a href="#">Volunteer</a>
-                <a href="#">Donate</a>
+            <div class="hyperlinks">
+                <div class="dropdown-container">
+                    <a href="#" class="main-link">Adopt</a>
+                    <div class="dropdown-menu">
+                        <a href="index-2.html">Maria</a>
+                        <a href="index-3.html">Blueberry</a>
+                        <a href="index-4.html">Jacky & Jill</a>
+                    </div>
+                </div>
+                <a href="#" class="main-link">Volunteer</a>
+                <a href="#" class="main-link">Donate</a>
             </div>
         </div>
         <!-- <div id="hero-1">
@@ -26,14 +33,16 @@
                 <img src="images/maria.jpg" alt="White Cat">
             </div>
             <div class="pet-info">
-                <h2>Maria</h2>
-                <p class="age">2 years old</p>
-                <p>
+                <div class="pet-title">
+                    <h2>Maria</h2>
+                    <p class="age">2 year old / Female</p>
+                </div>
+                <p class="details">
                     Maria is a sweet sassy cat who loves to get her 
                     beauty sleep.
                 </p>
-                <a href="#">Adopt Now!</a>
-                <a href="#"> Scheduale a Play Date</a>
+                <a href="#" class="adopt-button">Adopt Now!</a>
+                <a href="#" class="scheduale-button"> Scheduale a Play Date</a>
             </div>
         </div>
     </body>
