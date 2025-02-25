@@ -1,0 +1,234 @@
+@import url('https://fonts.googleapis.com/css2?family=Besley:ital,wght@0,700;1,700&family=Karla:ital,wght@0,200..800;1,200..800&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0px;
+    font-family: "Karla", serif;
+}
+
+.header {
+    background-color: #fbf8f3;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* justify-content: space-evenly; */
+    padding: 0px 300px;
+    height: 220px;
+    position: relative;
+}
+
+.header i {
+    color: #324625;
+    font-size: 24px;
+    padding: 12px;
+}
+
+.header .logo {
+    width: 200px;
+    margin: 10px auto;
+    position: absolute;
+    z-index: 10;
+    top: 30px;
+    right: 43%;
+    display: inline-block;
+}
+
+.header .home {
+    margin-right: auto;
+}
+
+.header-bottom {
+    background-color: #BF2354;
+    text-align: center;
+    padding: 15px 48px;
+    border-radius: 20px;
+    position: absolute;
+    bottom: -30px;
+    display: flex;
+    justify-content: space-between;
+    width: 1400px;
+}
+
+.header-bottom .right {
+    margin-right: 250px;
+}
+
+.header-bottom .left {
+    text-align: right;
+}
+
+.header-bottom a {
+    padding: 10px 40px;
+    text-decoration: none;
+    color: white;
+    font-size: 24px;
+}
+
+.single-column {
+    min-width: 600px;
+    max-width: 1500px;
+    margin: 0px auto;
+}
+
+#hero-background {
+    background: #AEBFA6;
+    padding: 125px 48px;
+    background-size: cover;
+}
+
+#hero {
+    margin-right: auto;
+    margin-left: auto;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    object-fit: fill;
+}
+
+#hero-content {
+    margin: 18px 48px;
+    flex: 1;
+}
+
+#hero-content h3 {
+    font-family: "Besley", serif;
+    font-size: 60px;
+    margin: 10px 0px;
+}
+
+#hero-content a {
+    text-decoration: none;
+    background-color: #D36928;
+    color: white;
+    font-size: 24px;
+    border-radius: 20px;
+    padding: 10px 24px;
+    margin: 20px;
+    display: inline-block;
+    text-align: center;
+    font-family: "Besley", serif;
+}
+
+.image-container {
+    flex: 2;
+}
+
+#hero img {
+    width: 100%;
+    border-radius: 25px;
+}
+
+#cards-background {
+    background-color: #fbf8f3;
+    padding: 100px 48px;
+}
+
+.subheader {
+    font-size: 40px;
+    font-family: "besley", serif;
+    text-align: center;
+}
+
+.cards-layout {
+    display: flex;
+    justify-content: center;
+}
+
+.card {
+    background-color: #fbf8f3;
+    border: 2px solid black;
+    border-radius: 25px;
+    padding: 14px 28px;
+    margin: 10px 28px;
+    text-align: center;
+    width: 400px;
+}
+
+.card img {
+    width: 300px;
+}
+
+.card a {
+    text-decoration: none;
+    display: inline-block;
+}
+
+.card a h5 {
+    font-family: "Besley", serif;
+    font-size: 28px;
+    margin: 15px;
+    color: black;
+}
+
+.card a p {
+    font-size: 16px;
+    margin: 25px;
+    flex: 1;
+    height: 60px;
+    color: black;
+}
+
+.button {
+    background-color: #88AE4B;
+    color: white;
+    padding: 10px 36px;
+    font-size: 20px;
+    font-family: "besley", serif;
+    border-radius: 25px;
+    margin: 10px;
+}
+
+#about-us-background {
+    background-color: #D36928;
+}
+
+.text-media {
+    display: flex;
+    justify-content: center;
+    padding: 100px 48px;
+}
+
+.about-us-image-container {
+    flex: 1;
+}
+
+.about-us-image-container img {
+    border-radius: 25px;
+    width: 100%;
+}
+
+.about-us-content {
+    flex: 1;
+    padding-left: 50px;
+}
+
+.subheader-about-us {
+    font-size: 40px;
+    font-family: "besley", serif;
+    text-align: left;
+}
+
+#footer {
+    padding: 80px 48px;
+}
+
+.footer-content {
+    min-width: 600px;
+    max-width: 1500px;
+    margin: 0px auto;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.footer-logo {
+    width: 200px;
+    margin: 10px auto;
+}
+
+.location {
+    text-align: center;
+}
