@@ -9,51 +9,70 @@ body {
     font-family: "Karla", serif;
 }
 
+/* Header */
+
 .header {
-    background-color: #fbf8f3;
+    /* background-color: #fbf8f3; */
+    background-image: url(../images/accents-background.jpg);
+    background-size: cover;
     display: flex;
     align-items: center;
+    height: 160px;
     justify-content: center;
-    /* justify-content: space-evenly; */
-    padding: 0px 300px;
-    height: 220px;
-    position: relative;
 }
 
 .header i {
     color: #324625;
     font-size: 24px;
     padding: 12px;
+    border-radius: 50%;
+    transition:
+        background-color 0.5s,
+        color 0.5s;
+}
+
+.home i:hover {
+    background-color: #D36928;
+    color: white;
+}
+
+.cart i:hover {
+    background-color: #D36928;
+    border-radius: 50%;
+    color: white;
 }
 
 .header .logo {
-    width: 200px;
-    margin: 10px auto;
+    width: 173px;
+    margin: 0px auto;
     position: absolute;
     z-index: 10;
-    top: 30px;
-    right: 43%;
+    top: -105px;
+    left: 50%;
     display: inline-block;
+    transform: translateX(-50%);
 }
 
-.header .home {
+.header .social-icons {
     margin-right: auto;
+}
+
+.home {
+    text-decoration: none;
+    padding: 0px 12px;
 }
 
 .header-bottom {
     background-color: #BF2354;
+    /* border: 1px solid black; */
     text-align: center;
-    padding: 15px 48px;
+    padding: 10px 48px;
     border-radius: 20px;
     position: absolute;
-    bottom: -30px;
     display: flex;
     justify-content: space-between;
-    width: 1400px;
-}
-
-.header-bottom .right {
-    margin-right: 250px;
+    width: 60%;
+    margin-bottom: -170px;
 }
 
 .header-bottom .left {
@@ -61,11 +80,23 @@ body {
 }
 
 .header-bottom a {
-    padding: 10px 40px;
+    padding: 10px 26px;
+    margin: 10px 26px;
     text-decoration: none;
+    border-radius: 20px;
     color: white;
-    font-size: 24px;
+    font-size: 20px;
+    transition:
+        background-color 0.3s,
+        border-radius 0.3s;
 }
+
+.header-bottom a:hover {
+    background-color: #D36928;
+    border-radius: 20px;
+}
+
+/* Hero Home Page Section */
 
 .single-column {
     min-width: 600px;
@@ -74,8 +105,8 @@ body {
 }
 
 #hero-background {
-    background: #AEBFA6;
-    padding: 125px 48px;
+    background: #88AE4B;
+    padding: 120px 48px;
     background-size: cover;
 }
 
@@ -89,27 +120,41 @@ body {
 }
 
 #hero-content {
-    margin: 18px 48px;
+    margin: 18px 32px;
+    padding: 0px 20px;
     flex: 1;
+    color: #fbf8f3;
 }
 
 #hero-content h3 {
     font-family: "Besley", serif;
     font-size: 60px;
-    margin: 10px 0px;
+    margin: 5px 0px;
+}
+
+#hero-content p {
+    font-size: 18px;
+    padding: 12px 0px;
 }
 
 #hero-content a {
     text-decoration: none;
-    background-color: #D36928;
+    background-color: #324625;
     color: white;
     font-size: 24px;
-    border-radius: 20px;
-    padding: 10px 24px;
-    margin: 20px;
+    border-radius: 25px;
+    padding: 10px 36px;
+    margin: 12px 0px;
     display: inline-block;
-    text-align: center;
     font-family: "Besley", serif;
+    transition: 
+        backgorund-color 0.3s,
+        box-shadow 0.3s;
+}
+
+#hero-content a:hover {
+    background-color: #BF2354;
+    box-shadow: 4px 4px 5px rgb(64, 64, 64);
 }
 
 .image-container {
@@ -121,8 +166,12 @@ body {
     border-radius: 25px;
 }
 
+/* Card Home Page Section */
+
 #cards-background {
-    background-color: #fbf8f3;
+    background-image: url(../images/accents-background.jpg);
+    background-size: cover;
+    background-position: fit;
     padding: 100px 48px;
 }
 
@@ -130,6 +179,8 @@ body {
     font-size: 40px;
     font-family: "besley", serif;
     text-align: center;
+    margin: 0px;
+    margin-bottom: 20px;
 }
 
 .cards-layout {
@@ -138,8 +189,8 @@ body {
 }
 
 .card {
-    background-color: #fbf8f3;
-    border: 2px solid black;
+    background-color: #faf7e6;
+    border: 2px solid #324625;
     border-radius: 25px;
     padding: 14px 28px;
     margin: 10px 28px;
@@ -178,11 +229,22 @@ body {
     font-size: 20px;
     font-family: "besley", serif;
     border-radius: 25px;
-    margin: 10px;
+    margin: 15px;
+    transition: 
+        background-color 0.3s,
+        box-shadow 0.3s;
 }
+
+.button:hover {
+    background-color: #BF2354;
+    box-shadow: 4px 4px 5px rgb(164, 164, 164);
+}
+
+/* About Us Main Page Section */
 
 #about-us-background {
     background-color: #D36928;
+    padding: 52px 0px;
 }
 
 .text-media {
@@ -202,7 +264,33 @@ body {
 
 .about-us-content {
     flex: 1;
-    padding-left: 50px;
+    padding-left: 60px;
+    color: #fbf8f3
+}
+
+.about-us-content p {
+    font-size: 18px;
+    margin: 24px 0px;
+}
+
+.about-us-content a {
+    text-decoration: none;
+    color: white;
+    background-color: #324625;
+    padding: 10px 36px;
+    border-radius: 20px;
+    font-size: 20px;
+    margin: 24px 0px;
+    display: inline-block;
+    font-family: "Besley",serif;
+    transition: 
+        backgroun-color 0.3s, 
+        box-shadow 0.3s;
+}
+
+.about-us-content a:hover {
+    background-color: #BF2354;
+    box-shadow: 4px 4px 5px rgb(64, 64, 64);
 }
 
 .subheader-about-us {
@@ -211,24 +299,172 @@ body {
     text-align: left;
 }
 
+/* Footer */
+
 #footer {
-    padding: 80px 48px;
+    padding: 72px 48px 24px 48px;
+    /* background-color: #fbf8f3; */
+    background-image: url(../images/accents-background.jpg);
+    background-size: cover;
+    border-top: 2px solid #324625;
 }
 
 .footer-content {
     min-width: 600px;
     max-width: 1500px;
     margin: 0px auto;
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas:
+        "location1 logo location2"
+        "copyright copyright copyright";
 }
 
 .footer-logo {
-    width: 200px;
+    width: 150px;
     margin: 10px auto;
+    margin-bottom: 36px;
+    grid-area: logo;
 }
 
-.location {
+.logo-footer-home {
     text-align: center;
+}
+
+.location1 {
+    text-align: center;
+    grid-area: location1;
+}
+
+.location2 {
+    text-align: center;
+    grid-area: location2;
+}
+
+.location-time {
+    border-bottom: 2px solid #88AE4B;
+}
+
+.area {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.copyright {
+    grid-area: copyright;
+    text-align: center;
+    font-size: 14px
+}
+
+/* Menu Page */
+
+.menu-single-column {
+    min-width: 600px;
+    max-width: 1200px;
+    margin: 0px auto;
+    text-align: center;
+}
+
+.item-title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 300px
+}
+
+.item-title h5 {
+    margin: 0px;
+    margin-right: auto;
+    font-size: 20px;
+}
+
+.main-menu {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: 56px;
+}
+
+.menu-item {
+    width: 390px;
+    text-align: left;
+    margin: 24px;
+}
+
+#sides-layout {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 56px
+}
+
+.menu-sub {
+    font-size: 36px;
+    font-family: "Besley", serif;
+    border-bottom: 3px solid #88AE4B;
+    display: inline-block;
+}
+
+h1 {
+    font-size: 48px;
+    font-family: "Besley", serif;
+    margin: 100px;
+    border-bottom: 4px solid #D36928
+}
+
+body {
+    background-image: url(../images/menu-background.jpg);
+    background-size: contain;
+}
+
+/* Menu Cards Section */
+
+.menu-cards {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    border: 2px solid #324625;
+    padding: 24px;
+    border-radius: 25px;
+    width: 800px;
+    margin: auto auto;
+    margin-bottom: 48px;
+}
+
+.menu-cards:last-child {
+    margin-bottom: 104px;
+}
+
+.image-container-menu {
+    width: 500px;
+}
+
+.menu-cards img {
+    width: 100%;
+    border-radius: 20px;
+}
+
+.menu-cards-content {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding: 24px;
+    text-align: left;
+}
+
+/* Media Quieres */
+
+@media screen and (max-width: 1650px) {
+    .header-bottom {
+        left: 5%;
+    }
+
+    .header-bottom a {
+        padding: 10px 16px;
+    }
+
+    .card {
+        width: 350px;
+    }
 }
