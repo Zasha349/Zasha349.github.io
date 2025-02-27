@@ -1,0 +1,172 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Rubik+Mono+One&display=swap');
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0px;
+    font-family: sans-serif;
+}
+
+body {
+    background: linear-gradient(to right, #241773 20%, #FFB612 );
+    color: whitesmoke;
+    background-color: lightgrey;
+    font-family: "Outfit", serif;
+}
+
+#single-column {
+    max-width: 1100px;
+    min-width: 500px;
+    margin: 0px;
+    margin-right: auto;
+    margin-left: auto;
+    text-align: center;
+    border-right: 2px solid whitesmoke;
+    border-left: 2px solid whitesmoke;
+    padding: 0px 24px;
+}
+
+#images-grid {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#left {
+    grid-area: ravens;
+}
+
+#right {
+    grid-area: steelers;
+}
+
+#images-grid p {
+    grid-area: vs;
+    font-size: 76px;
+    margin: 24px;
+    font-family: "Rubik Mono One", serif;
+}
+
+#left img {
+    width: 440px;
+}
+
+#images-grid h4 {
+    font-size: 24px;
+    font-weight: bold;
+    display: inline-block;
+}
+
+#right img {
+    width: 450px;
+}
+
+h1 {
+    font-size: 68px;
+    margin: 20px;
+    font-family: "Rubik Mono One", serif;
+}
+
+h3 {
+    font-size: 40px;
+    margin: 18px;
+}
+
+h4 {
+    font-size: 20px;
+    font-weight: normal;
+    margin: 14px;
+}
+
+h5 {
+    font-size: 16px;
+}
+
+#button-layout {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#button-layout a {
+    text-decoration: none;
+    background-color: white;
+    color: #241773;
+    border: 3px solid transparent;
+    padding: 16px 24px;
+    margin: 24px;
+    display: block;
+    transition: 
+        border 0.3s,
+        box-shadow 0.3s;
+}
+
+#button-layout a:hover {
+    border: 3px solid #241773;
+    box-shadow: 0px 0px 15px whitesmoke;
+}
+
+@media screen and (max-width: 980px) {
+    h1 {
+        font-size: 56px;
+    }
+
+    #left img {
+        width: 350px;
+    }
+
+    #right img {
+        width: 350px;
+    }
+
+    #images-grid p {
+        font-size: 72px;
+    }
+}
+
+@media screen and (max-width: 840px) {
+    h1 {
+        font-size: 52px;
+    }
+
+    #left img {
+        width: 350px;
+    }
+
+    #right img {
+        width: 350px;
+    }
+
+    #images-grid p {
+        font-size: 72px;
+    }
+
+    #images-grid {
+        flex-direction: column;
+    }
+    
+    #left {
+        display: flex;
+        flex-direction: column;
+    }
+
+    #right {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    h1 {
+        font-size: 48px;
+    }
+
+    h3 {
+        font-size: 36px;
+    }
+
+    #images-grid p {
+        font-size: 60px;
+    }
+}
