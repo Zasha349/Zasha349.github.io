@@ -460,7 +460,7 @@ h1 {
 }
 
 #favorites {
-    margin-top: 100px;
+    margin-top: 130px;
 }
 
 body {
@@ -525,6 +525,10 @@ body {
 
     .header-bottom a {
         margin: 10px 15px;
+    }
+
+    #favorites {
+        margin-top: 100px;
     }
 }
 
